@@ -153,7 +153,9 @@ apt-get update
 
 function install_xorg {
 apt-get -y install xorg 1>> /var/log/karoshi_build.log 2>> /var/log/karoshi_build.log
+apt-get -y install xserver-xorg-video-all 1>> /var/log/karoshi_build.log 2>> /var/log/karoshi_build.log
 }
+
 
 function install_monitorix {
 #Needed because monitorix repo has a week key
